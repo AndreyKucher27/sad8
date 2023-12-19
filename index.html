@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Задание 8</title>
+</head>
+<body>
+  <button id="openPopupButton">Открыть форму</button>
+  <div id="popup" class="popup">
+    <div class="popup-ner">
+      <h2>Форма обратной связи</h2>
+      <form id="feedbackForm">
+        <label for="fullName">ФИО</label>
+        <input type="text" id="fullName" name="fullName" required>
+          <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+          <label for="phone">Телефон</label>
+        <input type="number" id="tel" name="phone" required>
+          <label for="organization">Организация</label>
+        <input type="text" id="organization" name="organization" required>
+          <label for="message">Сообщение</label>
+        <textarea id="message" name="message" required></textarea>
+          <label for="agreement">
+          <input type="checkbox" id="agreement" name="agreement" required>
+          Я согласен с политикой обработки персональных данных
+        </label>
+          <button type="submit">Отправить</button>
+      </form>
+    </div>
+  </div>
+    <div id="sucmes" class="message"></div>
+  <div id="ermes" class="message"></div>  
+    <script defer src="main.js"></script>
+</body>
+</html>
